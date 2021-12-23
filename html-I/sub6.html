@@ -1,0 +1,168 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<title>write, sub6</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/sub6.css">
+		<style type="text/css">
+
+			/* 배경이미지 */
+
+			body {
+				background-image:url(images/background/wood.jpg);
+			}
+
+			/* 사이트 대문 */
+			
+			header {
+				background-color:black;
+				width:100%;
+				position:fixed;
+				top:0px;
+				left:0px;
+			}
+
+			/* 대문 글자 */
+
+			.title {
+				color:white;
+				text-align:center;
+			}
+
+			/* 로그인, 메뉴 */
+
+			nav {
+				margin-top:120px;
+			}
+
+			/* 메뉴 */
+			
+			.topmenu {
+				list-style:none;
+				width:100%;
+				background-color:black;
+				margin-left:-10px;
+				padding:10px;
+				text-align:center;
+			}
+
+			/* 메뉴 글자 */
+
+			.topmenu li {
+				display:inline;
+				margin-left:0px;
+				padding-left:50px;
+			}
+
+			/* 메뉴 링크 */
+
+			.topmenu a {
+				font:1.5em "Times New";
+				color:#fff;
+				text-decoration:none;
+			}
+
+			/* 링크 작동 */
+
+			a:hover {
+				color:#ff3;
+			}
+
+			/* 본문 */
+
+			section {
+				margin-top:50px;
+			}
+
+			/* 글 전체 틀 */ 
+
+			.write_body {
+				font:15pt "맑은 고딕", 돋움;
+				line-height:150%;
+				color:black;
+				width:800px;
+				height:600px;
+				padding:10px;
+				background:white;
+				border:4px solid black;
+				border-radius:10px;
+				box-shadow:0px 0px 20px #000000;
+				text-align:center;
+				margin:0 auto;
+			}
+
+			/* 글 내용 */
+
+			.write {
+				text-align:left;
+				margin-left:50px;
+			}
+
+			/* 내용 */
+
+			.etc {
+				text-align:center;
+				margin-left:-50px;
+			}
+
+			/* 작성 버튼 */			
+
+			.submit {
+				text-align:center;
+			}
+	
+		</style>
+	</head>
+	<body>
+		<header>
+			<h2 class="title">헤드셋 판매 사이트</h2>
+		</header>
+
+		<nav>
+			<ul class="topmenu">
+				<li><a href="index.html">메인</a></li>
+				<li><a href="sub1.html">구매</a></li>
+				<li><a href="sub2.html">수리</a></li>
+				<li><a href="sub3.html">환불/교환</a></li>
+				<li><a href="sub4.html">커뮤니티</a></li>
+				<li><a href="sub5.html">마이페이지</a></li>
+			</ul>
+		</nav>
+
+		<section>
+		<div class="write_body">
+			<div class ="write">
+				<p>게시판 : <select>
+						<option>선택</option>
+						<option>자유게시판</option>
+						<option>후기게시판</option>
+						<option>질문게시판</option>
+					</select></p>
+				<p>제목 : <input type = "text"></p>
+				<p>모델명 : <select>
+						<option>--선택--</option>
+						<option>--MDR-100ABN--</option>
+						<option>--WH-CH400--</option>
+						<option>--MDR-1ABT--</option>
+						<option>--WH-1000XM2--</option>
+						<option>--G430--</option>
+						<option>--G-G633--</option>
+						<option>--G-G231--</option>
+						<option>--G-G233PRODIGY--</option>
+						<option>--VOID PRO RGB WIRELESS SE--</option>
+						<option>--HS50--</option>
+						<option>--RAPTOR HS40--</option>
+						<option>--VOID STEREO Dolby--</option>
+						<option>--SHS-G100BG--</option>
+						<option>--SHS-100V--</option>
+						<option>--SHS-240V--</option>
+						<option>--SHS-220V--</option>
+					</select></p>
+				<p class="etc"><textarea cols='100' rows='15'>내용</textarea></p>
+				<p>첨부파일<input type="file"></p>
+			</div>
+				<input type = "button" class = "submit" value = "작성">
+		</div>
+		</section>
+	</body>
+</html>
